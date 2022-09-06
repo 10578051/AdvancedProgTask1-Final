@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +26,13 @@
       </li>
     </ul>
     <div>
-        <a href="mycart.php" class=btn btn-outline-success>My Cart (0)</a>
+        <?php
+        if(isset($_SESSION['cart']))
+        {
+            $count=count($_SESSION['cart']);
+        }
+        ?>
+        <a href="mycart.php" class="btn btn-outline-success">My Cart(<?php echo $count; ?>)</a>
     </div>
   </div>
 </nav>
