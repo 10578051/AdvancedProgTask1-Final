@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             if(in_array($_POST['Item_Name'],$myitems))
             {
                 echo"<script>
-                    alert('Item Already Added');
+                    alert('You have already added this item to your cart. View your cart to edit the quantity.');
                     window.location.href='index.php';
                 </script>";
             }
@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             $count=count($_SESSION['cart']);
             $_SESSION['cart'][$count]=array('Item_Name'=>$_POST['Item_Name'],'Price'=>$_POST['Price'], 'Quantity'=>1);
             echo"<script>
-                alert('Item Added');
+                alert('You have added this item to your cart.');
                 window.location.href='index.php';
             </script>";
         }
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         {
             $_SESSION['cart'][0]=array('Item_Name'=>$_POST['Item_Name'],'Price'=>$_POST['Price'], 'Quantity'=>1);
             echo"<script>
-                alert('Item Added');
+                alert('You have added this item to your cart.');
                 window.location.href='index.php';
             </script>";
         }
@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                 unset($_SESSION['cart'][$key]);
                 $_SESSION['cart']=array_values($_SESSION['cart']);
                 echo"<script>
-                    alert('Item Removed');
+                    alert('You have removed this item from your cart.');
                     window.location.href='mycart.php';
                 </script>";
             }

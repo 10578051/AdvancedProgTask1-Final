@@ -1,22 +1,35 @@
+<!-- Source of following code: https://www.youtube.com/watch?v=-aRRH0gZYQw&list=PLWxTHN2c_6caKWKPHyFI9svQEvlQtzCGa&index=2&ab_channel=TJWEBDEV -->
+
+<!-- Include the header file -->
 <?php include ("header.php");
 
-/*Source of following code: https://www.youtube.com/watch?v=-aRRH0gZYQw&list=PLWxTHN2c_6caKWKPHyFI9svQEvlQtzCGa&index=2&ab_channel=TJWEBDEV */
 ?>
+
+<!-- Start of HTML file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cart</title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Poppins:wght@300;400&family=Varela&display=swap" rel="stylesheet">
+
+    <title>My Cart | June Living Interiors</title>
 </head>
+
+<!-- Body --> 
 <body>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center border rounded bg-light my-5">
-                <h1>MY CART</h1>
+                <h1>My Cart</h1>
             </div>
 
+            <!--Table headings-->
             <div class="col-lg-8">
                 <table class="table">
                     <thead class="text-center">
@@ -30,6 +43,8 @@
                         </tr>
                     </thead>
                     <tbody class="text-center">
+
+
                         <?php
                             if(isset($_SESSION['cart']))
                             {
@@ -71,6 +86,8 @@
                         if(isset($_SESSION['cart']) && count($_SESSION['cart'])>0)
                         {
                     ?>
+
+                    <!-- Checkout form -->
                     <form action="purchase.php" method="POST">
                         <div class="form-group">
                             <label>Full Name</label>
@@ -97,6 +114,7 @@
 
 <!-- The source of the following code is from: https://www.youtube.com/watch?v=osxrCEXb4cs&ab_channel=TJWEBDEV -->
 
+<!-- Increase and decrease the quantity in the basket and update the total amount-->
 <script>
 
     var gt=0;
@@ -118,7 +136,6 @@
     }
 
     subTotal();
-
 </script>
 
 </body>

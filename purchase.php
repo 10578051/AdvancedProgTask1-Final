@@ -1,17 +1,24 @@
+<!-- Source for the following code: https://www.youtube.com/watch?v=eQBHxWKpVGs&ab_channel=TJWEBDEV*/ -->
+
 <?php
 
-/* Source for the following code: https://www.youtube.com/watch?v=eQBHxWKpVGs&ab_channel=TJWEBDEV*/ 
+/*Start the connection to the interiordesignshop database on mysql*/
 
 session_start();
 $con=mysqli_connect("localhost","root","","interiordesignshop");
 
+/*Below code used if there is an error connecting to the database*/
+/*And redirects you back to the cart page*/
+
 if(mysqli_connect_error()){
     echo"<script>
-    alert('Cannot connect to database');
+    alert('Can't successfully connect to database');
     window.location.href='mycart.php';
     </script>";
     exit();
 }
+
+/*Below code executes if there is a post request and sends the data to the 'order_history' and 'users_orders' tables */
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
     if(isset($_POST['purchase']))
@@ -24,6 +31,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             $stmt=mysqli_prepare($con,$query2);
             if($stmt)
             {
+
+                /*Code source for the following code:  https://www.youtube.com/watch?v=eQBHxWKpVGs&ab_channel=TJWEBDEV */ 
                 mysqli_stmt_bind_param($stmt,"isii", $Order_Id,$Item_Name,$Price,$Quantity);
                 foreach($_SESSION['cart'] as $key => $values)
                 {
@@ -34,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                 }
                 unset($_SESSION['cart']);
                 echo"<script>
-                    alert('Order Placed');
+                    alert('Your order has been successfully placed');
                     window.location.href='index.php';
                 </script>";
 
@@ -42,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             else
             {
                 echo"<script>
-                    alert('SQL Prepare Error');
+                    alert('There was an error with the SQL Prepare function');
                     window.location.href='mycart.php';
                 </script>";
             }
@@ -50,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         else
         {
             echo"<script>
-            alert('SQL Error');
+            alert('There was an error inserting into the SQL table');
             window.location.href='mycart.php';
             </script>";
         }
