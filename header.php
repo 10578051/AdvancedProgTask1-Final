@@ -24,23 +24,23 @@ session_start();
 
 <!-- Nav bar below --> 
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="index.php"><img src="images/logo4.png"></a>
+  <a class="navbar-brand" href="home.php"><img src="images/logo4.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="home.php">Home</a>
+        <a class="nav-link" href="home.php">HOME</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="about.php">About</a>
+        <a class="nav-link" href="about.php">ABOUT</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="pastprojects.php">Past Projects</a>
+        <a class="nav-link" href="pastprojects.php">PROJECTS</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Shop</a>
+        <a class="nav-link" href="index.php">SHOP</a>
       </li>
     </ul>
     <div>
@@ -54,7 +54,7 @@ session_start();
             $count=count($_SESSION['cart']);
         }
         ?>
-        <a href="mycart.php" class="cart-button">My Cart(<?php echo $count; ?>)</a>
+        <a href="mycart.php" class="cart-button">MY CART(<?php echo $count; ?>)</a>
     </div>
   </div>
 </nav>

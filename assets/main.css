@@ -1,25 +1,98 @@
+/*home*/
+
+.home-body{
+    background-color: #e2e0d4;
+}
+
+.outer-wrapper-bottom{
+    margin-left: 800px
+}
+
+.outer-wrapper-bottom-left{
+    margin-right: 800px;
+}
+
+.wrapper-text{
+    margin-left: -800px;
+}
+
+.header-image{
+    max-width: 100%;
+}
+
+.announcement-bar{
+    background-color: #dfdbd8;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.text-bar{
+    text-decoration: none;
+    color: black;
+}
+
+.text-bar:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.main-heading{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 0px !important;
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    margin-bottom: 25px;
+}
+
+.home-body-bottom{
+    margin-bottom: 20px;
+}
+
+.home-body-top{
+    margin-top: 25px;
+}
+
+/* Nav bar */
+
 .navbar, .navbar-expand-lg, .a, .nav-link, .navbar-brand{
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color:black;
 }
 
+.cart-button{
+    border: solid;
+    border-width: thin;
+    color: black;
+    text-decoration: none;
+    margin-left: 1250px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cart-button:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/* Shop */
 .card-title, .card-text{
     font-family: 'Merriweather', serif;
 }
 .card-body{
-    /*font-family: 'Roboto', sans-serif !important; */
     font-family: 'Poppins', sans-serif;
 }
 
-.cart-button{
-    background-color: black;
-    color: white;
-    margin-left: 1250px;
-    border-radius: 15px;
-    padding: 10px;
-
+.card-description{
+    font-size: 14px;
 }
+
+/* Past Projects */ 
 
 .column-page{
     padding-top: 30px;
@@ -27,4 +100,44 @@
 
 .col-lg-3{
     margin-bottom: 25px;
+}
+
+/* Cart */
+
+.total-box{
+    background-color: #dfdbd8;
+}
+
+/* Footer */ 
+
+.footer-bottom{
+    background-color:#8d4f48;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-home{
+    margin-right: 5px;
+}
+
+.fa-envelope{
+    margin-right: 6px;
+}
+
+.text-white{
+    text-decoration: none;
+}
+
+.text-white:hover{
+    text-decoration: underline;
+}
+
+.contact-email{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-email:hover{
+    color: white;
+    text-decoration: underline;
 }

@@ -31,6 +31,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Wayfar Bench</h5>
                             <p class="card-text">€550</p>
+                            <p class="card-description">The Wayfar Bench is classical with a modern, minimalist twist. A statement piece suitable for any room.</p>
                             <button type="submit" name ="Add_To_Cart" class="btn btn-cart">Add to Cart</button>
                             <input type="hidden" name="Item_Name" value="Wayfar Bench">
                             <input type="hidden" name="Price" value="550">
@@ -46,6 +47,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Hanfui Chair</h5>
                         <p class="card-text">€390</p>
+                        <p class="card-description">With a rattan interior and a natural wood finish, the Hanfui chair is a comfortable but stylish chair.</p>
                         <button type="submit" name="Add_To_Cart" class="btn btn-cart">Add to Cart</button>
                         <input type="hidden" name="Item_Name" value="Hanfui Chair">
                         <input type="hidden" name="Price" value="390">
@@ -61,6 +63,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Shanora Light</h5>
                         <p class="card-text">€290</p>
+                        <p class="card-description">Warmth and class is what defines the Shanora Light. This statement piece is not only functionable, but fashionable.</p>
                         <button type="submit" name="Add_To_Cart" class="btn btn-cart">Add to Cart</button>
                         <input type="hidden" name="Item_Name" value="Shanora Light">
                         <input type="hidden" name="Price" value="290">
@@ -76,6 +79,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Prosha Vase</h5>
                         <p class="card-text">€120</p>
+                        <p class="card-description">The Prosha vase boasts fine ceramics and cratmanship. The perfect addition to a bookcase or fireplace.</p>
                         <button type="submit" name="Add_To_Cart" class="btn btn-cart">Add to Cart</button>
                         <input type="hidden" name="Item_Name" value="Prosha Vase">
                         <input type="hidden" name="Price" value="120">
@@ -89,13 +93,8 @@
 </body>
 
 <!--footer (source: https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115) -->
-<!-- Remove the container if you want to extend the Footer to full width. -->
 
-  <!-- Footer -->
-  <footer
-          class="text-center text-lg-start text-white"
-          style="background-color:#e9d2c4"
-          >
+<footer class="footer-bottom text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Links -->
@@ -119,16 +118,16 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Sitemap</h6>
             <p>
-              <a class="text-white">Home</a>
+              <a class="text-white" href="home.php">Home</a>
             </p>
             <p>
-              <a class="text-white">About Us</a>
+              <a class="text-white" href="about.php">About Us</a>
             </p>
             <p>
-              <a class="text-white">Previous Projects</a>
+              <a class="text-white" href="pastprojects.php">Past Projects</a>
             </p>
             <p>
-              <a class="text-white">Shop</a>
+              <a class="text-white" href="index.php">Shop</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -141,7 +140,7 @@
               Useful links
             </h6>
             <p>
-              <a class="text-white">Your Cart</a>
+              <a class="text-white" href="mycart.php">Your Cart</a>
             </p>
 
           </div>
@@ -153,9 +152,9 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p><i class="fas fa-home mr-3"></i>4 The Grange, Smithfield</p>
-            <p><i class="fas fa-envelope mr-3"></i>juneliving@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><a class="contact-email" href="mailto: juneliving@gmail.com"><i class="fas fa-envelope mr-3"></i>juneliving@gmail.com</a></p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 5678</p>
+            <p><i class="fas fa-print mr-3"></i> + 353 123 4567</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -173,9 +172,7 @@
             <!-- Copyright -->
             <div class="p-3">
               © 2020 Copyright:
-              <a class="text-white" href="index.php"
-                 >Juneliving.com</a
-                >
+              <a class="text-white" href="index.php">Juneliving.com</a>
             </div>
             <!-- Copyright -->
           </div>
@@ -188,6 +185,8 @@
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
+               href="https://www.facebook.com"
+               target="_"
                ><i class="fab fa-facebook-f"></i
               ></a>
 
@@ -196,6 +195,8 @@
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
+               href="https://www.twitter.com"
+               target="_"
                ><i class="fab fa-twitter"></i
               ></a>
 
@@ -204,6 +205,8 @@
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
+               href="https://www.google.com"
+               target="_"
                ><i class="fab fa-google"></i
               ></a>
 
@@ -212,6 +215,8 @@
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
+               href="https://www.instagram.com"
+               target="_"
                ><i class="fab fa-instagram"></i
               ></a>
           </div>
@@ -223,7 +228,5 @@
     <!-- Grid container -->
   </footer>
   <!-- Footer -->
-</div>
-<!-- End of .container -->
 
 </html>
