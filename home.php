@@ -12,6 +12,11 @@
     
     <script src="https://kit.fontawesome.com/641be407cc.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Poppins:wght@300;400&family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Oswald:wght@300&family=Poppins:wght@300;400&family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Merriweather:wght@300;&family=Oswald:wght@300&family=Poppins:wght@300;400&family=Varela&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/main.css">
     
@@ -20,21 +25,21 @@
 </head>
 <body class="home-body">
     <div class="outer-wrapper-upper">
+    <div class="announcement-bar"><a class="text-bar" href="index.php">Shop our Furniture & Furnishings Now ></a></div>
         <div class="inner-wrapper">
-            <div class="announcement-bar"><a class="text-bar" href="index.php">Shop our Furniture & Furnishings Now ></a></div>
-            <h1><img class="header-image" src="images/Header4.jpg" alt="A sofa in an interior designed room"></h1>
+            <img class="header-image" src="images/Header4.jpg" alt="A sofa in an interior designed room">
         </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center home-heading">
-                <h1 class="main-heading">WELCOME TO JUNE LIVING INTERIORS</h1>
+                <h1 class="main-heading">Welcome to June Living Interiors</h1>
                 <h2 class="secondary-heading">A design so unique, it was created for you</h2>
             </div>
 
             <div class="col-lg-12 text-center home-body">
-                <p>June Living Interiors is an award winning Interior Design agency. Our team consists of four designers made up of Patricia June, Dermot Thomas, Derek Goodwin and Gillian Claffey. With collectively up to 60 years experience in Interior Design, 
+                <p>June Living Interiors is an award winning Interior Design agency. Our team consists of three main designers made up of Patricia June, Dermot Thomas, and Gillian McCaffrey. With collectively up to 60 years experience in Interior Design, 
                     our team are sure to be best placed to transform your home into the space you have always dreamed of. 
                 </p>
             </div>
@@ -52,9 +57,10 @@
     </div>
 
         <div class="inner-wrapper">
-            <h1><img class="header-image" src="images/Header5.jpg" alt="A sofa in an interior designed room"></h1>
- 
-            <div class="container">
+            <img class="header-image" src="images/Header5.jpg" alt="A sofa in an interior designed room">
+        </div>
+
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center home-body-top">
                 <p>Are you in need of a redesign of an existing home or are you about to embark on a new build? Whatever the type of project, big or small, the team at June Living can help. Our portfolio convers
@@ -69,7 +75,7 @@
             </div>
                 </p>
             </div>
-        </div>
+    </div>
     </div>
     </div>
 </div>
@@ -156,7 +162,7 @@
             <!-- Copyright -->
             <div class="p-3">
               © 2020 Copyright:
-              <a class="text-white" href="index.php">Juneliving.com</a>
+              <a class="text-white" href="home.php">Juneliving.com</a>
             </div>
             <!-- Copyright -->
           </div>

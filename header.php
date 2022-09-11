@@ -31,16 +31,16 @@ session_start();
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="home.php">HOME</a>
+        <a class="nav-link" href="home.php">Home</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="about.php">ABOUT</a>
+        <a class="nav-link" href="about.php">About</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="pastprojects.php">PROJECTS</a>
+        <a class="nav-link" href="pastprojects.php">Projects</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">SHOP</a>
+        <a class="nav-link" href="index.php">Shop</a>
       </li>
     </ul>
     <div>
@@ -54,7 +54,7 @@ session_start();
             $count=count($_SESSION['cart']);
         }
         ?>
-        <a href="mycart.php" class="cart-button">MY CART(<?php echo $count; ?>)</a>
+        <a href="mycart.php" class="cart-button">My Cart(<?php echo $count; ?>)</a>
     </div>
   </div>
 </nav>

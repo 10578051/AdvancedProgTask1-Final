@@ -16,8 +16,52 @@
 
     <title>About | June Living Interiors</title>
 </head>
-<body>
-    Testing 123
+
+<body class="about-body">
+    <div class="outer-wrapper-upper">
+      <div class="announcement-bar"><a class="text-bar" href="index.php">Shop our Furniture & Furnishings Now ></a></div>
+        <div class="inner-wrapper">
+            <img class="header-image" src="images/team1.jpg" alt="A sofa in an interior designed room">
+        </div>
+    </div>
+
+    <div class="container text-left">
+    <div class="row">
+        <div class="col column-page about-body">
+        <h3 class="designer-heading">Patricia June</h3>
+        Patricia June is an award-winning artist based in Dublin, Ireland. She is the founder of June Living and has been consulting for over 20 years all across Ireland. With a passion for design since a young age, Patricia went on
+        to study Interior Design at IDAI College. 
+        <br>
+        </br>
+        Since graduating, she has led many architectural projects and has been coined a 'visionary' in modern design within Ireland. Her style can be defined as minimalistic, yet she is careful
+        to ensure that each design is warm and that the space works for each clients requirements. 
+        </div>
+        <div class="col column-page about-body">
+        <h3 class="designer-heading">Dermot Thomas</h3>
+        Combining raw materials and interesting textures is Dermot Thomas' self defined style as an interior designer. Since graduating TU Dublin over 20 years ago, Dermot has transformed homes and businesses
+        across the country. He has worked on hundreds of projects which span across a variety of styles and requirements, delivering way above the expectation each time.
+        <br>
+        </br>
+        Dermot is also a member of the ASAI, with a dedication to sustainability he ensures that each design and project is done in a way that promotes renewable living. 
+        </div>
+        <div class="col column-page about-body">
+        <h3 class="designer-heading">Gillian McCaffrey</h3>
+        With over 25 years experience as an interior designer, Gillian McCaffrey is an expert at design and interior consulting. She studied Interior Design at Trinity College, Dublin and since leaving there has gone on 
+        to work at many prestigious firms including DAI Designs, Fallon Interiors & Danbury Designs. 
+        <br>
+        </br>
+        She met Patricia June early on in her career, and joined the agency 10 years ago. Since joining she has continued to lead some groundbreaking Irish designs, combining bold colors with modern and 
+        minimalist designs and aesthetics. 
+        </div>
+    </div>
+    </div>
+
+    <div class="outer-wrapper-upper">
+      <div class="announcement-bar-bottom"><a class="text-bar-bottom" href="mailto: juneliving@gmail.com">Contact Us Now For a Consultation ></a></div>
+        <div class="inner-wrapper">
+            <img class="header-image" src="images/team2.jpg" alt="A sofa in an interior designed room">
+        </div>
+    </div>
 </body>
 
 <!--footer (source: https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115) -->
@@ -100,7 +144,7 @@
             <!-- Copyright -->
             <div class="p-3">
               © 2020 Copyright:
-              <a class="text-white" href="index.php">Juneliving.com</a>
+              <a class="text-white" href="home.php">Juneliving.com</a>
             </div>
             <!-- Copyright -->
           </div>

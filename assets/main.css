@@ -20,6 +20,31 @@
     max-width: 100%;
 }
 
+/* Following code source:https://www.w3schools.com/css/exercise.asp?filename=exercise_css3_transitions1*/
+
+.inner-wrapper {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.inner-wrapper img {
+	vertical-align: top;
+	max-width: 100%;
+	-moz-transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
+}
+
+.inner-wrapper:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
 .announcement-bar{
     background-color: #dfdbd8;
     font-family: 'Poppins', sans-serif;
@@ -42,6 +67,7 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
     margin-bottom: 0px !important;
+    text-transform: uppercase;
 }
 
 h2{
@@ -49,13 +75,10 @@ h2{
     margin-bottom: 25px;
 }
 
-.home-body-bottom{
-    margin-bottom: 20px;
+.home-body-top{
+    padding-top: 25px;
 }
 
-.home-body-top{
-    margin-top: 25px;
-}
 
 /* Nav bar */
 
@@ -63,6 +86,7 @@ h2{
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color:black;
+    text-transform: uppercase;
 }
 
 .cart-button{
@@ -73,6 +97,7 @@ h2{
     margin-left: 1250px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .cart-button:hover{
@@ -82,14 +107,71 @@ h2{
 
 /* Shop */
 .card-title, .card-text{
-    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
+
 .card-body{
     font-family: 'Poppins', sans-serif;
 }
 
 .card-description{
     font-size: 14px;
+}
+
+.shop-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.shop-body{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 5px;
+}
+
+.shop-heading{
+    background-color: #dad5d2;
+    padding-top:5px;
+}
+
+.btn-cart{
+    border-radius: 0px;
+}
+
+/* About page */
+
+.designer-heading{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.inner-wrapper{
+    padding-bottom: -10px !important;
+    margin-bottom: -10px !important;
+}
+
+.about-body{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+}
+
+.announcement-bar-bottom{
+    background-color: #cebeb9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.text-bar-bottom{
+    text-decoration: none;
+    color: black;
+}
+
+.text-bar-bottom:hover{
+    text-decoration: underline;
+    color: black;
 }
 
 /* Past Projects */ 
@@ -102,10 +184,75 @@ h2{
     margin-bottom: 25px;
 }
 
+.announcement-bar-project{
+    margin-top: 30px;
+    background-color: #cebeb9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.projects-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.projects-body{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Cart */
 
 .total-box{
     background-color: #dfdbd8;
+}
+
+.mycart-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.mycart-body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-titles{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.product-info{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Purchase Form */
+
+ .form-text{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+ }
+
+ .form-control{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 13px;
+ }
+
+ .total{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+ }
+
+ #gtotal{
+    font-family: 'Poppins', sans-serif;
+ }
+
+ .purchase-button{
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
 }
 
 /* Footer */ 

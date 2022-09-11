@@ -13,23 +13,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Poppins:wght@300;400&family=Varela&display=swap" rel="stylesheet">
 
     <title>Past Projects | June Living Interiors</title>
 </head>
 <body>
+
+    <div class="col-lg-12 text-center my-5">
+        <h1 class="projects-title">Gallery of Past Projects</h1>
+        <p class="projects-body">Browse through a sample of homes we have worked on previously to get a taste for our style & designs</p>
+    </div>
+
     <div class="container text-center">
     <div class="row">
         <div class="col column-page">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <img class="project-image" src="images/pastprojects/1.png" alt="A sofa in an interior designed room">
         </div>
         <div class="col column-page">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <img class="project-image" src="images/pastprojects/3.png" alt="A sofa in an interior designed room">
         </div>
         <div class="col column-page">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <img class="project-image" src="images/pastprojects/33.png" alt="A sofa in an interior designed room">
         </div>
     </div>
     </div>
+
+    <div class="container text-center">
+    <div class="row">
+        <div class="col column-page">
+            <img class="project-image" src="images/pastprojects/project2.jpg" alt="A sofa in an interior designed room">
+        </div>
+        <div class="col column-page">
+            <img class="project-image" src="images/pastprojects/project3.jpg" alt="A sofa in an interior designed room">
+        </div>
+        <div class="col column-page">
+            <img class="project-image" src="images/pastprojects/adobedownload2.jpg" alt="A sofa in an interior designed room">
+        </div>
+    </div>
+    </div>
+
+    <div class="container text-center">
+    <div class="row">
+        <div class="col column-page">
+            <img class="project-image-bottom" src="images/pastprojects/Room2-1.png" alt="A sofa in an interior designed room">
+        </div>
+        <div class="col column-page">
+            <img class="project-image-bottom" src="images/pastprojects/Room2-2.png" alt="A sofa in an interior designed room">
+        </div>
+        <div class="col column-page">
+            <img class="project-image-bottom" src="images/pastprojects/Room2-3.png" alt="A sofa in an interior designed room">
+        </div>
+    </div>
+    </div>
+
+    <div class="announcement-bar-project"><a class="text-bar" href="index.php">Shop our Furniture & Furnishings Now ></a></div>
+
 </body>
 
 
@@ -113,7 +151,7 @@
             <!-- Copyright -->
             <div class="p-3">
               © 2020 Copyright:
-              <a class="text-white" href="index.php">Juneliving.com</a>
+              <a class="text-white" href="home.php">Juneliving.com</a>
             </div>
             <!-- Copyright -->
           </div>

@@ -26,7 +26,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center my-5">
-                <h1>My Cart</h1>
+                <h1 class="mycart-title">My Cart</h1>
+                <p class="mycart-body">View which items have been added to your cart before purchase</p>
             </div>
 
             <!--Table headings-->
@@ -34,16 +35,15 @@
                 <table class="table">
                     <thead class="text-center">
                         <tr>
-                        <th scope="col">Serial Number</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Total</th>
-                        <th scope="col"></th>
+                        <th scope="col" class="col-titles">Serial Number</th>
+                        <th scope="col" class="col-titles">Name</th>
+                        <th scope="col" class="col-titles">Price</th>
+                        <th scope="col" class="col-titles">Quantity</th>
+                        <th scope="col" class="col-titles">Total</th>
+                        <th scope="col" class="col-titles"></th>
                         </tr>
                     </thead>
-                    <tbody class="text-center">
-
+                    <tbody class="text-center product-info">
                         <?php
                             if(isset($_SESSION['cart']))
                             {
@@ -77,8 +77,8 @@
             </div>
 
             <div class="col-lg-3">
-                <div class="border total-box p-4">
-                    <h4>Total:</h4>
+                <div class="border total-box p-2">
+                    <h4 class="total">Total:</h4>
                     <h5 class="text-right" id="gtotal"></h5>
                     <br>
                     <?php
@@ -89,19 +89,19 @@
                     <!-- Checkout form -->
                     <form action="purchase.php" method="POST">
                         <div class="form-group">
-                            <label>Full Name</label>
+                            <label class="form-text">Full Name</label>
                             <input type="text" name="fullname" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Email</label>
+                            <label class="form-text">Email</label>
                             <input type="text" name ="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Address</label>
+                            <label class="form-text">Address</label>
                             <input type="text" name="address" class="form-control" required>
                         </div>
                         <br>
-                        <button class="btn btn-primary btn-block" name="purchase">Purchase</button>
+                        <button class="btn btn-block purchase-button" name="purchase">Purchase</button>
                     </form>
                     <?php 
                         }
@@ -112,7 +112,6 @@
     </div>
 
 <!-- The source of the following code is from: https://www.youtube.com/watch?v=osxrCEXb4cs&ab_channel=TJWEBDEV -->
-
 <!-- Increase and decrease the quantity in the basket and update the total amount-->
 <script>
 
@@ -136,6 +135,13 @@
 
     subTotal();
 </script>
+
+<div class="outer-wrapper-upper">
+    <div class="announcement-bar"><a class="text-bar" href="index.php">Continue Browsing ></a></div>
+        <div class="inner-wrapper">
+            <img class="header-image" src="images/bottomimage2.jpg" alt="A sofa in an interior designed room">
+        </div>
+    </div>
 
 </body>
 
@@ -219,7 +225,7 @@
             <!-- Copyright -->
             <div class="p-3">
               © 2020 Copyright:
-              <a class="text-white" href="index.php">Juneliving.com</a>
+              <a class="text-white" href="home.php">Juneliving.com</a>
             </div>
             <!-- Copyright -->
           </div>
