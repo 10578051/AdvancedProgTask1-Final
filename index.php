@@ -26,6 +26,7 @@
       <p class="shop-body">Minimalist pieces to add to your space</p>
   </div>
 
+    <!-- Source of the following code: https://www.youtube.com/watch?v=-aRRH0gZYQw&ab_channel=TJWEBDEV -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-3">
@@ -226,7 +227,7 @@
     
 </body>
 
-<!--footer (source: https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115) -->
+<!--footer (Source: https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115) -->
 
 <footer class="footer-bottom text-center text-lg-start">
     <!-- Grid container -->

@@ -97,8 +97,16 @@
                             <input type="text" name ="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label class="form-text">Address</label>
-                            <input type="text" name="address" class="form-control" required>
+                            <label class="form-text">Street Address</label>
+                            <input type="text" name="street_address" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-text">City</label>
+                            <input type="text" name="city" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-text">Country</label>
+                            <input type="text" name="country" class="form-control" required>
                         </div>
                         <br>
                         <button class="btn btn-block purchase-button" name="purchase">Purchase</button>

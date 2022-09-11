@@ -1,4 +1,6 @@
-  <!-- Start the session --> 
+<!-- Source of code: https://www.youtube.com/watch?v=-aRRH0gZYQw&ab_channel=TJWEBDEV -->
+
+<!-- Start the session --> 
 <?php
 session_start();
 ?>

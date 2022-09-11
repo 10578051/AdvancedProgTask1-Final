@@ -67,9 +67,7 @@
     </div>
 
     <div class="announcement-bar-project"><a class="text-bar" href="index.php">Shop our Furniture & Furnishings Now ></a></div>
-
 </body>
-
 
 <!--footer (source: https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115) -->
 

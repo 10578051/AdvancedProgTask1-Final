@@ -5,7 +5,7 @@
 /*Start the connection to the interiordesignshop database on mysql*/
 
 session_start();
-$con=mysqli_connect("localhost","root","","interiordesignshop");
+$con=mysqli_connect("localhost","root","","interiordesigndb");
 
 /*Below code used if there is an error connecting to the database*/
 /*And redirects you back to the cart page*/
@@ -18,21 +18,21 @@ if(mysqli_connect_error()){
     exit();
 }
 
-/*Below code executes if there is a post request and sends the data to the 'order_history' and 'users_orders' tables */
+/*Below code executes if there is a post request and sends the data to the 'customer_order' and 'order_item' tables */
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
     if(isset($_POST['purchase']))
     {
-        $query1= "INSERT INTO `order_history`(`Full_name`, `Email`, `Address`) VALUES ('$_POST[fullname]','$_POST[email]','$_POST[address]')";
+        $query1= "INSERT INTO `customer_order`(`Full_name`, `Email`, `Street_Address`,`City`, `Country`) VALUES ('$_POST[fullname]','$_POST[email]','$_POST[street_address]','$_POST[city]','$_POST[country]')";
         if(mysqli_query($con, $query1))
         {
+            /*Code source for the following code:  https://www.youtube.com/watch?v=eQBHxWKpVGs&ab_channel=TJWEBDEV */
             $Order_Id=mysqli_insert_id($con);
-            $query2="INSERT INTO `users_orders`(`Order_Id`, `Item_Name`, `Price`, `Quantity`) VALUES (?,?,?,?)";
+            $query2="INSERT INTO `order_item`(`Orderitem_Id`, `Item_Name`, `Price`, `Quantity`) VALUES (?,?,?,?)";
             $stmt=mysqli_prepare($con,$query2);
             if($stmt)
             {
-
-                /*Code source for the following code:  https://www.youtube.com/watch?v=eQBHxWKpVGs&ab_channel=TJWEBDEV */ 
+                 
                 mysqli_stmt_bind_param($stmt,"isii", $Order_Id,$Item_Name,$Price,$Quantity);
                 foreach($_SESSION['cart'] as $key => $values)
                 {
@@ -46,7 +46,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                     alert('Your order has been successfully placed');
                     window.location.href='index.php';
                 </script>";
-
             }   
             else
             {
